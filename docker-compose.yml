@@ -1,0 +1,12 @@
+version: '2'
+services:
+  cli:
+    security_opt:
+      - seccomp:unconfined
+    cap_add:
+      - SYS_PTRACE
+    image: kambo22/php-ffi-php-conference-appetizer
+    volumes:
+      - .:/home/dev/DuckDBFFI
+    build:
+      dockerfile: Dockerfile
