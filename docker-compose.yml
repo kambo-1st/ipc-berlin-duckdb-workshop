@@ -8,5 +8,3 @@ services:
     image: kambo22/php-ffi-php-conference-appetizer
     volumes:
       - .:/home/dev/DuckDBFFI
-    build:
-      dockerfile: Dockerfile
